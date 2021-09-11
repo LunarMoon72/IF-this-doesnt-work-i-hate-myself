@@ -18,11 +18,12 @@ class Main extends PluginBase {
 
     public function onCommand(CommandSender $sender, Command $cmd, String $label, Array $args) : bool {
         switch($cmd->getName()) {
-            if($sender instanceof Player) {
-                $this->mainui($sender);
-            } else {
-                $this->getLogger()->info("Use this In game");
-            }
+            case "cmd":
+              if($sender instanceof Player) {
+                  $this->mainui($sender);
+              } else {
+                  $this->getLogger()->info("Use this In game");
+              }
 
         }
         return true;

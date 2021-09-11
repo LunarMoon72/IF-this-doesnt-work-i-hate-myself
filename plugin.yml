@@ -1,0 +1,14 @@
+name: Plugin5
+main: LunarMoon72\Plugin5\Main
+author: LunarMoon72
+version: 0.0.1
+api: 3.21.4
+
+commands:
+  cmd:
+    description: Cmd
+    permission: plugin5.cmd
+
+permissions:
+  plugin5.cmd:
+    default: op
